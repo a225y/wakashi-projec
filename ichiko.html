@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WAKASHI Project</title>
+        <meta charset="utf-8">
+        <!-- boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+        <!-- googleFont -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="swiper-bundle.min.0710c671.css">
+
+        <link rel="stylesheet" href="styles.10220a28.css">
+
+    </head>
+    <body>
+        <div id="app">
+            
+            <!-- header區 -->
+            <header class="header" id="header">
+                <nav class="nav container">
+                    <a href="index.html" class="nav__logo second__logo">
+                        <img src="web_logo-0.1ca944f2.png" alt="和菓子">
+                    </a>
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list">
+                            <li class="nav-item">
+                                <a href="shop.html" class="nav__link second__color">Online 商品</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav__link second__color">店舗のご案内</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav__link second__color">問い合わせ</a>
+                            </li>
+                        </ul>
+                        <div class="nav__close" id="nav-close">
+                            <i class="bx bx-x"></i>
+                        </div>
+                    </div>
+
+                    <div class="nav__btns">
+                        <div class="login__toggle second__color" id="login-toggle">
+                            <i class="bx bx-user"></i>
+                        </div>
+
+                        <div class="nav__shop second__color" id="cart-shop">
+                            <i class="bx bx-shopping-bag"></i>
+                        </div>
+
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="bx bx-grid-alt"></i>
+                        </div>
+                    </div>
+
+                </nav>
+
+            </header>
+            <!-- 購物車 -->
+            <div class="cart" id="cart">
+                <i class="bx bx-x cart__close" id="cart-close"></i>
+
+                <h2 class="cart__title-center">選購清單</h2>
+
+                <div class="cart__container">
+
+                    <!-- 1 -->
+                    <article class="cart__card">
+                        <div class="cart__box">
+                            <img src="cart-1.efbdccbe.jpeg" alt="" class="cart__img">
+                        </div>
+
+                        <div class="cart__details">
+                            <h3 class="cart__title">チョコあまおういちご大福（冷蔵便）</h3>
+                            <span class="cart__price">1,728円（税込）</span>
+
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-minus"></i>
+                                    </span>
+                                    
+                                    <span class="cart__amount-number">1</span>
+
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-plus"></i>
+                                    </span>
+
+                                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 2 -->
+                    <article class="cart__card">
+                        <div class="cart__box">
+                            <img src="cart-2.0baa8a79.jpeg" alt="" class="cart__img">
+                        </div>
+                    
+                        <div class="cart__details">
+                            <h3 class="cart__title">ふくさ餅　（黒糖・加賀棒茶ショコラ)</h3>
+                            <span class="cart__price">528円（税込）</span>
+                    
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-minus"></i>
+                                    </span>
+                    
+                                    <span class="cart__amount-number">1</span>
+                    
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-plus"></i>
+                                    </span>
+                    
+                                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 3 -->
+                    <article class="cart__card">
+                        <div class="cart__box">
+                            <img src="cart-3.e47bb3e7.jpeg" alt="" class="cart__img">
+                        </div>
+                    
+                        <div class="cart__details">
+                            <h3 class="cart__title">金沢ゆず大福【冷凍商品】</h3>
+                            <span class="cart__price">350円（税込）</span>
+                    
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-minus"></i>
+                                    </span>
+                    
+                                    <span class="cart__amount-number">1</span>
+                    
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-plus"></i>
+                                    </span>
+                    
+                                    <i class="bx bx-trash-alt cart__amount-trash"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="cart__prices">
+                    <span class="cart__prices-item">3　セッド</span>
+                    <span class="cart__prices-total">2,606</span>
+                </div>
+            </div>
+            <!-- 登入框 -->
+            <div class="login" id="login">
+                <i class="bx bx-x login__close" id="login-close"></i>
+
+                <h2 class="login__title-center">会員登録</h2>
+
+                <form class="login__form grid">
+                    <div class="login__content">
+                        <label for="" class="login__label">メールアドレス</label>
+                        <input type="email" class="login__input">
+                    </div>
+
+                    <div class="login__content">
+                        <label for="" class="login__label">パスワード</label>
+                        <input type="password" class="login__input">
+                    </div>
+
+                    <div>
+                        <a href="#" class="button">登録</a>
+                    </div>
+
+                    <div>
+                        <p class="singup">新規会員登録 <a href="#">申し込み</a></p>
+                    </div>
+                </form>
+
+            </div>
+            <!-- =========  主頁區 main   ======= -->
+            <div class="main">
+                <!-- ====  Details 區   ==== -->
+                <section class="details section container">
+                    <div class="breadcrumb__title"> 商品ラインナップ</div>
+                    <h3 class="breadcrumb__subtitle"> 村上のお菓子 > <span>  季節のお菓子 </span></h3>
+
+                    <div class="details__container grid">
+
+                        <div class="product__images grid">
+                            <div class="product__img">
+                                <img src="ichiko-1.e44863be.jpeg"> 
+                            </div>
+                            <div class="product__img">
+                                <img src="ichiko-2.e7c718cc.jpeg">
+                            </div>
+                            <div class="product__img">
+                                <img src="ichiko-4.84dd00f3.jpeg">
+                            </div>
+                            <div class="product__img">
+                                <img src="ichiko-3.cd5628d5.jpeg">
+                            </div>
+                        </div>    
+
+                        <div class="product__info">
+                            <p class="details__subtitle">  【ご予約受付中】 > あまおういちご大福 </p>
+                            <h3 class="datails__title">菓子・スナック </h3>
+
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bxs-star"></i>
+                                    <i class="bx bx-star"></i>
+                                </div>
+                                <span class="reviews__count">40 + Reviews</span>
+                            </div>
+
+                            <div class="details__prices">
+                                <span class="details__price"> 300 円(税込）</span>
+                                <span class="details__discount"> 600 円 </span>
+                                <span class="discount__perecentage">50% OFF</span>
+                            </div>
+
+                            <div class="details__description">
+                                <h3 class="description__title">商品 Details</h3>
+                                <div class="description__details">
+                                    <p>厳選された福岡県産のジューシーな「あまおう」と甘さ控えめな自家製小豆こしあんを柔らかく炊き上げたお餅で包みました。
+                                        この時期しか味わえない絶品の一品です。 
+                                        発送日の朝に職人が一つひとつ包んで発送致します。 
+                                        販売期間1月～4月上旬予定（いちごの入荷状況により販売期間が前後する場合がございます。）
+
+                                        <br>
+                                         ※冷凍でのお届けとなります。到着後は速やかに冷凍保管をお願いいたします。
+                                        <br>
+                                         ※お召上がりの際は常温・または冷蔵庫内で解凍（2時間程度）しお召し上がりください。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li class="description__details-li">※日保ちは目安です。到着後、各商品の賞味期限をご確認ください。</li>
+                                <li class="description__details-li">日保ち　　：製造後3日</li>
+                                <li class="description__details-li">販売期間　：-----</li>
+                                <li class="description__details-li">アレルギー：卵・乳成分</li>
+                                <li class="description__details-li">カロリー　：１個あたり　101kcal</li>
+                            </ul>
+
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-minus"></i>
+                                    </span>
+                            
+                                    <span class="cart__amount-number">1</span>
+                            
+                                    <span class="cart__amount-box">
+                                        <i class="bx bx-plus"></i>
+                                    </span>
+                            
+                                    <i class="bx bx-heart cart__amount-heart"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="button">購入する</a>
+
+                        </div>
+
+                    </div>           
+                </section>
+                <!-- ====  related 區   ==== -->
+                <section class="related__products section">
+                    <div class="new__section-maintitle">
+                        <h2 class="section__title related-section__title">おすすめ商品 </h2>
+                    </div>
+                    
+                    
+                    <div class="new__container container">
+                        <div class="swiper new-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- 新品介紹 #1 -->
+                                <div class="new__content swiper-slide">
+                                    <div class="new-tag">NEW</div>
+                                    <img src="oyatsu1.84597078.jpeg" alt="" class="new__img">
+                                    <h3 class="new__title">まるごとみかん大福</h3>
+                                    <span class="new__subtitle">【冷凍商品】</span>
+                    
+                                    <div class="new__prices">
+                                        <span class="new__price">540円</span>
+                                        <span class="new__discount">590円</span>
+                                    </div>
+                    
+                                    <a href="#" class="button new__button">
+                                        <i class="bx bx-cart-alt new-icon"></i>
+                                    </a>
+                    
+                                </div>
+                                <!-- 新品介紹 #2 -->
+                                <div class="new__content swiper-slide">
+                                    <div class="new-tag">NEW</div>
+                                    <img src="oyatsu2.5fc45ef9.jpeg" alt="" class="new__img">
+                                    <h3 class="new__title">和栗モンブランのあんころ餅</h3>
+                                    <span class="new__subtitle">【冷凍商品】</span>
+                    
+                                    <div class="new__prices">
+                                        <span class="new__price">840円</span>
+                                        <span class="new__discount">890円</span>
+                                    </div>
+                    
+                                    <a href="#" class="button new__button">
+                                        <i class="bx bx-cart-alt new-icon"></i>
+                                    </a>
+                    
+                                </div>
+                                <!-- 新品介紹 #3 -->
+                                <div class="new__content swiper-slide">
+                                    <div class="new-tag">NEW</div>
+                                    <img src="oyatsu3.be26189d.jpeg" alt="" class="new__img">
+                                    <h3 class="new__title">あまおういちご大福</h3>
+                                    <span class="new__subtitle">【冷蔵便】</span>
+                    
+                                    <div class="new__prices">
+                                        <span class="new__price">1740円</span>
+                                        <span class="new__discount">1780円</span>
+                                    </div>
+                    
+                                    <a href="#" class="button new__button">
+                                        <i class="bx bx-cart-alt new-icon"></i>
+                                    </a>
+                    
+                                </div>
+                                <!-- 新品介紹 #4 -->
+                                <div class="new__content swiper-slide">
+                                    <div class="new-tag">NEW</div>
+                                    <img src="oyatsu4.0c326b71.jpeg" alt="" class="new__img">
+                                    <h3 class="new__title">バラ菓子</h3>
+                                    <span class="new__subtitle">【常温便】</span>
+                    
+                                    <div class="new__prices">
+                                        <span class="new__price">300円</span>
+                                        <span class="new__discount">340円</span>
+                                    </div>
+                    
+                                    <a href="#" class="button new__button">
+                                        <i class="bx bx-cart-alt new-icon"></i>
+                                    </a>
+                    
+                                </div>
+                                <!-- 新品介紹 #5 -->
+                                <div class="new__content swiper-slide">
+                                    <div class="new-tag">NEW</div>
+                                    <img src="oyatsu5.cdd3c259.jpeg" alt="" class="new__img">
+                                    <h3 class="new__title">濃厚でなめらかなチョコ羊羹</h3>
+                                    <span class="new__subtitle">【常温便】</span>
+                    
+                                    <div class="new__prices">
+                                        <span class="new__price">850円</span>
+                                        <span class="new__discount">890円</span>
+                                    </div>
+                    
+                                    <a href="#" class="button new__button">
+                                        <i class="bx bx-cart-alt new-icon"></i>
+                                    </a>
+                    
+                                </div>
+                                <!-- 新品介紹 #6 -->
+                                <div class="new__content swiper-slide">
+                                    <div class="new-tag">NEW</div>
+                                    <img src="oyatsu6.68fe1163.jpeg" alt="" class="new__img">
+                                    <h3 class="new__title">金澤 姫だるま団子</h3>
+                                    <span class="new__subtitle">【冷凍】</span>
+                    
+                                    <div class="new__prices">
+                                        <span class="new__price">900円</span>
+                                        <span class="new__discount">950円</span>
+                                    </div>
+                    
+                                    <a href="#" class="button new__button">
+                                        <i class="bx bx-cart-alt new-icon"></i>
+                                    </a>
+                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- ====  頁尾區   ==== -->
+                <footer class="footer section">
+                    <div class="footer__container container grid">
+                        <!-- 頁尾聯絡區 1. -->
+                        <div class="footer__content">
+                            <a href="#" class="footer__logo">
+                                <img src="footer.7109a48a.png" alt="" class="footer__img">
+                            </a>
+
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link"><i class="bx bxl-facebook social__icon"></i></a>
+                                <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt social__icon"></i></a>
+                                <a href="#" class="footer__social-link"><i class="bx bxl-twitter social__icon"></i></a>
+                            </div>
+                        </div>
+                        <!-- 頁尾聯絡區 2. -->
+                        <div class="footer__content">
+                            <h3 class="footer__title">合資会社 村上製菓所</h3>
+                            
+                            <ul class="footer__links">
+                                <li class="footer__link">〒921-8042 石川県金沢市泉本町1丁目4番地</li>
+                                <li class="footer__link">1-4 izumihon-machi,kanazawa-shi,ishikawa-ken,921-8042,Japan 【MAP】</li>
+                            </ul>
+                        </div>
+                        <!-- 頁尾聯絡區 3. -->
+                        <div class="footer__content">
+                            <h3 class="footer__title">下記からのご注文も承っており</h3>
+
+                            <ul class="footer__links">
+                                <li class="footer__link">Tel：0120-800-234（8:30～17:00）</li>
+                                <li class="footer__link">Fax：076-242-1412（24時間受付）</li>
+                                <li class="footer__link">【専用メールフォーム】（24時間受付）</li>
+                            </ul>
+                        </div>    
+                    </div>
+
+                        <span class="footer__copy">&#169;個人網頁作品集</span>
+            
+                    </footer></div>
+                
+                 <!-- ==== 燈箱light Box ==== -->
+                 <div class="lightbox">
+                     <div class="lightbox__content">
+                         <div class="lightbox__close">&times;</div>
+                         <img src="ichiko-1.e44863be.jpeg" alt="" class="lightbox__img">
+                         <div class="lightbox__caption">
+                             <div class="caption__text">菓子・スナック</div>
+                            <div class="caption__counter"></div>
+                         </div>
+                     </div>
+
+                     <div class="lightbox__controls">
+                        <div class="prev__item" id="prev-btn"><i class="bx bx-chevron-left"></i></div>
+                        <div class="next__item" id="next-btn"><i class="bx bx-chevron-right"></i></div>
+                     </div>
+                 </div>
+                <!-- ====  回上方按鈕   ==== -->
+                <a href="#" class="scrollup" id="scroll-up">
+                    <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+                </a>
+            </div>
+
+        
+        <script>var productItems = document.querySelectorAll('.product__img'),
+  totalProductItem = productItems.length,
+  lightbox = document.querySelector('.lightbox'),
+  lightboxImg = lightbox.querySelector('.lightbox__img'),
+  lightboxClose = lightbox.querySelector('.lightbox__close'),
+  lightboxCounter = lightbox.querySelector('.caption__counter'),
+  nextBtn = document.querySelector('#next-btn'),
+  prevtBtn = document.querySelector('#prev-btn');
+var itemIndex = 0;
+var _loop = function _loop(i) {
+  productItems[i].addEventListener('click', function () {
+    itemIndex = i;
+    changeItem();
+    toggleLightbox();
+  });
+};
+for (var i = 0; i < productItems.length; i++) {
+  _loop(i);
+}
+function toggleLightbox() {
+  lightbox.classList.toggle("open");
+}
+function changeItem() {
+  imgSrc = productItems[itemIndex].querySelector('.product__img img').getAttribute('src');
+  lightboxImg.src = imgSrc;
+  lightboxCounter.innerHTML = itemIndex + 1 + "&nbsp;" + "of" + "&nbsp;" + totalProductItem;
+}
+nextBtn.addEventListener('click', function () {
+  if (itemIndex === totalProductItem - 1) {
+    itemIndex = 0;
+  } else {
+    itemIndex++;
+  }
+  changeItem();
+});
+prevtBtn.addEventListener('click', function () {
+  if (itemIndex === 0) {
+    itemIndex = totalProductItem - 1;
+  } else {
+    itemIndex--;
+  }
+  changeItem();
+});
+
+//close 
+lightbox.addEventListener('click', function (e) {
+  if (e.target === lightboxClose || e.target === lightbox) {
+    toggleLightbox();
+  }
+});</script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="main.b61ebe65.js"></script>
+    </body>
+</html>
